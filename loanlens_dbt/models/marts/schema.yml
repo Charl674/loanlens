@@ -1,0 +1,30 @@
+# models/marts/schema.yml
+
+version: 2
+
+models:
+  - name: mart_delinquency_trends
+    description: 'Quarterly delinquency rates across all loan categories'
+    columns:
+      - name: year_quarter
+        description: 'Reporting period e.g. 2024-Q3'
+        tests:
+          - unique
+          - not_null
+      - name: consumer_delinquency_rate
+        tests:
+          - not_null
+
+  - name: mart_risk_scorecard
+    description: 'Composite risk score and RAG status per loan category per quarter'
+    columns:
+      - name: rag_status
+        description: 'Red Amber Green risk flag'
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['RED', 'AMBER', 'GREEN']
+      - name: risk_score
+        tests:
+          - not_null
