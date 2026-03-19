@@ -1,4 +1,4 @@
-# LoanLens 2.0 — Live Credit Risk Intelligence
+# LoanLens — Live Credit Risk Intelligence
 
 A production-style analytics engineering project that ingests live Federal Reserve credit risk data, transforms it through a modern cloud data stack, and delivers a board-ready dashboard that updates automatically every quarter.
 
