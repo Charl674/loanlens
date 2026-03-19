@@ -38,4 +38,4 @@ FRED API → Python → Snowflake Internal Stage → COPY INTO → dbt Core → 
 5. Run `cd loanlens_dbt && dbt run`
 
 ## Author
-Analytics Engineer — credit data, lender validation, Snowflake, dbt, Python
+Emmanuel Haick — credit data, lender validation, Snowflake, dbt, Python
